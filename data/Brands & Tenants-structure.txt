@@ -1,0 +1,73 @@
+## 🔝 Page Header
+
+1. **Inner Page Banner**
+
+   * Page Title (Brands & Tenants)
+   * Trust-building tagline (Leased to Leading Brands)
+   * Breadcrumb
+
+---
+
+## 🏬 Brands & Tenants Page Body Sections
+
+2. **Brand Trust Introduction Section**
+
+   * Short note on why branded tenants matter
+   * Stability & assurance for investors
+
+3. **Anchor Brands Section**
+
+   * Major / flagship brands
+   * High footfall generators (food, fitness)
+
+4. **Lifestyle & Retail Brands Section**
+
+   * Fashion
+   * Streetwear
+   * Value retail
+   * Daily-use brands
+
+5. **Food & Beverage Brands Section**
+
+   * Cafés
+   * QSRs
+   * Hangout-oriented tenants
+
+6. **Fitness & Wellness Brands Section**
+
+   * Gym / wellness anchors
+   * Daily repeat-visit advantage
+
+7. **Brand Visibility Advantage Section**
+
+   * Highway-facing exposure
+   * Signage & boards advantage
+
+8. **Operational / On-Lease Status Section**
+
+   * Already operational
+   * Leased spaces
+   * Assured occupancy angle
+
+9. **Why Brands Choose This Project Section**
+
+   * Location
+   * Footfall
+   * Catchment audience
+
+10. **Investor Confidence Section**
+
+    * How branded tenants = stable rental income
+
+11. **Call To Action Section**
+
+    * Enquire for Available Units
+    * Download Brand List / Talk to Sales
+
+---
+
+## 🔻 Footer
+
+*(Same global footer as other pages)*
+
+---

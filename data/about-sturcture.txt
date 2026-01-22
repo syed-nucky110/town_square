@@ -1,0 +1,68 @@
+## 🔝 Page Header
+
+1. **Inner Page Banner**
+
+   * Page Title (About Town Square)
+   * One-line value statement
+   * Breadcrumb (Home > About)
+
+---
+
+## 🏢 About Page Body Sections
+
+2. **Project Introduction Section**
+
+   * What is Town Square
+   * Vision & concept of the project
+
+3. **Project Philosophy Section**
+
+   * Why this project was created
+   * Long-term mindset (growth, legacy, returns)
+
+4. **Location Significance Section**
+
+   * Why this highway location matters
+   * Strategic importance & visibility
+
+5. **Brand Ecosystem Section**
+
+   * Mix of food, fitness, fashion & lifestyle
+   * How brands add value to the project
+
+6. **Investor-Centric Approach Section**
+
+   * Designed for investors
+   * Rental yield + capital appreciation focus
+
+7. **Project Strengths Section**
+
+   * RERA Approved
+   * Fast construction
+   * Parking
+   * High footfall planning
+
+8. **Target Audience Section**
+
+   * Investors
+   * Brands / Businesses
+   * Daily visitors & families
+
+9. **Trust & Credibility Section**
+
+   * Builder credibility
+   * Approvals & reliability (high-level, no legal page)
+
+10. **Call To Action Section**
+
+    * Book Site Visit
+    * Talk to Investment Expert
+
+---
+
+## 🔻 Footer
+
+*(Same footer as Home Page — consistent across website)*
+
+---
+

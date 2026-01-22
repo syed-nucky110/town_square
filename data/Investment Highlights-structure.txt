@@ -1,0 +1,74 @@
+## 🔝 Page Header
+
+1. **Inner Page Banner**
+
+   * Page Title (Investment Highlights)
+   * Strong investor tagline (High Returns | Stable Income)
+   * Breadcrumb
+
+---
+
+## 💰 Investment Highlights Page Body Sections
+
+2. **Why Invest in This Project Section**
+
+   * One-glance summary for investors
+   * Risk + return perspective
+
+3. **Location-Driven Returns Section**
+
+   * Highway frontage advantage
+   * Continuous footfall impact on ROI
+
+4. **Branded Tenancy Advantage Section**
+
+   * National brands on lease
+   * Rental stability & lower vacancy risk
+
+5. **Rental Income Potential Section**
+
+   * Lease-based income model
+   * Predictable monthly/annual yield
+
+6. **Capital Appreciation Section**
+
+   * Long-term growth story
+   * Future demand & appreciation logic
+
+7. **Investor-Friendly Planning Section**
+
+   * Layout efficiency
+   * Visibility-optimized units
+
+8. **Low-Risk Investment Factors Section**
+
+   * Approved project
+   * Trusted development
+   * Faster possession advantage
+
+9. **Comparison / Value Proposition Section**
+
+   * This project vs typical commercial properties
+
+10. **Who Should Invest Section**
+
+    * First-time investors
+    * HNI / long-term investors
+    * Passive income seekers
+
+11. **Real-World Use Case Section**
+
+    * How income flows post-possession
+
+12. **Call To Action Section**
+
+    * Speak to Investment Expert
+    * Book Site Visit / Enquire Now
+
+---
+
+## 🔻 Footer
+
+*(Same consistent footer as other pages)*
+
+---

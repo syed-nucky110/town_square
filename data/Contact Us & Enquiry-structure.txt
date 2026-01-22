@@ -1,0 +1,54 @@
+## 🔝 Page Header
+
+1. **Inner Page Banner**
+
+   * Page Title (Contact Us / Enquiry)
+   * Short trust line (We’re Here to Help You Invest Better)
+   * Breadcrumb
+
+---
+
+## 📞 Contact Us / Enquiry Page Body Sections
+
+2. **Quick Contact Overview Section**
+
+   * One-line intro
+   * Sales-focused reassurance
+
+3. **Enquiry Form Section**
+
+   * Name
+   * Phone
+   * Email
+   * Purpose of enquiry
+   * Submit CTA
+
+4. **Direct Contact Details Section**
+
+   * Phone number
+   * Email ID
+   * Business hours
+
+5. **Site Address Section**
+
+   * Project address
+   * Landmark reference
+
+6. **Map & Location Section**
+
+   * Embedded map
+   * Direction support
+
+7. **CTA Reinforcement Section**
+
+   * Call Now
+   * WhatsApp Enquiry
+   * Book Site Visit
+
+---
+
+## 🔻 Footer
+
+*(Same consistent footer as entire website)*
+
+---

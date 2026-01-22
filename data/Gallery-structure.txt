@@ -1,0 +1,61 @@
+## 🔝 Page Header
+
+1. **Inner Page Banner**
+
+   * Page Title (Gallery)
+   * Short line (Experience the Project Visually)
+   * Breadcrumb
+
+---
+
+## 🖼️ Gallery Page Body Sections
+
+2. **Gallery Introduction Section**
+
+   * One-line intro about visuals & experience
+
+3. **Project Exteriors Section**
+
+   * Building façade
+   * Highway frontage
+   * Overall look & scale
+
+4. **Retail & Brand Spaces Section**
+
+   * Shops
+   * Brand outlets
+   * Active commercial spaces
+
+5. **Food & Lifestyle Zone Section**
+
+   * Cafés
+   * Restaurants
+   * Social hangout areas
+
+6. **Fitness & Activity Zone Section**
+
+   * Gym / fitness brands
+   * High-energy zones
+
+7. **Footfall & Live Environment Section**
+
+   * Crowd movement
+   * Real-time activity vibe
+
+8. **Day & Night View Section**
+
+   * Morning / evening ambience
+   * 24×7 active feel
+
+9. **Gallery CTA Section**
+
+   * Enquire Now
+   * Book Site Visit
+
+---
+
+## 🔻 Footer
+
+*(Same footer as all other pages)*
+
+---

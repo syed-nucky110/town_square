@@ -1,0 +1,101 @@
+## 🔝 Header Section
+
+1. **Top Bar** (Phone Number | Email | Site Location)
+2. **Main Navigation Menu**
+
+   * Home
+   * About Project
+   * Brands & Tenants
+   * Investment Highlights
+   * Amenities
+   * Gallery
+   * Contact
+3. **Primary CTA Button** (Enquire Now / Book Site Visit)
+
+---
+
+## 🏠 Home Page Body Sections
+
+4. **Hero Section**
+
+   * Project Name + Tagline
+   * Location Highlight
+   * Strong CTA (Enquiry Form Button)
+
+5. **Project Overview Section**
+
+   * Short introduction (What is the project & why it matters)
+
+6. **Key Highlights Section**
+
+   * RERA Approved
+   * Location Advantage
+   * High Footfall
+   * ROI Focused
+
+7. **Brands & Tenants Section**
+
+   * Logos / Names of existing brands
+   * Trust & credibility focus
+
+8. **Location Advantage Section**
+
+   * Highway connectivity
+   * Nearby institutions
+   * Crowd & footfall angle
+
+9. **Investment Benefits Section**
+
+   * Rental income
+   * Capital appreciation
+   * Investor-friendly points
+
+10. **Amenities & Features Section**
+
+    * Parking
+    * Visibility
+    * Lifestyle & utility features
+
+11. **Lifestyle / Use-Case Section**
+
+    * Food, Fitness, Retail, Social Hub angle
+
+12. **Gallery Preview Section**
+
+    * Images (project, brands, lifestyle)
+
+13. **Lead Generation Section**
+
+    * Enquiry Form
+    * Call / WhatsApp CTA
+
+---
+
+## 🔻 Footer Section
+
+14. **Footer Top**
+
+    * Short project summary
+    * Address
+
+15. **Quick Links**
+
+    * Home
+    * About
+    * Brands
+    * Investment
+    * Gallery
+    * Contact
+
+16. **Contact Details**
+
+    * Phone
+    * Email
+    * Site Location
+
+17. **Legal / Disclaimer**
+
+    * Project disclaimer text
+    * Copyright
+
+---

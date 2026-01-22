@@ -1,0 +1,74 @@
+## 🔝 Page Header
+
+1. **Inner Page Banner**
+
+   * Page Title (Why Invest Here)
+   * Powerful headline (Where Smart Money Grows)
+   * Breadcrumb
+
+---
+
+## 📈 Why Invest Here Page Body Sections
+
+2. **Investment Summary Section**
+
+   * One-screen snapshot of all key reasons
+
+3. **Strategic Location Advantage Section**
+
+   * Highway exposure
+   * Continuous daily footfall logic
+
+4. **Demand & Footfall Section**
+
+   * Students, families, professionals
+   * 24×7 activity potential
+
+5. **Brand Power & Tenant Strength Section**
+
+   * Established brands
+   * Lower vacancy & higher trust
+
+6. **Rental Security Section**
+
+   * Lease-driven income
+   * Predictable cash flow
+
+7. **Capital Growth Opportunity Section**
+
+   * Area growth
+   * Long-term appreciation
+
+8. **Low Risk Factors Section**
+
+   * Approved project
+   * Market-ready concept
+   * Faster possession angle
+
+9. **Commercial vs Other Investments Section**
+
+   * Comparison with residential / traditional options
+
+10. **Who Benefits the Most Section**
+
+    * Investors
+    * Business owners
+    * Long-term wealth planners
+
+11. **Future Outlook Section**
+
+    * Growth vision
+    * Sustainability & longevity
+
+12. **Strong Call To Action Section**
+
+    * Talk to Investment Advisor
+    * Book Site Visit / Enquire Now
+
+---
+
+## 🔻 Footer
+
+*(Same standard footer as rest of website)*
+
+---

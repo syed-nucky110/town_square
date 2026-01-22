@@ -1,0 +1,235 @@
+.brands {
+    padding: var(--spacing-xxl) 0;
+    background: linear-gradient(180deg, #fafafa 0%, var(--color-white) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.brands::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(218, 165, 32, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    position: relative;
+    z-index: 1;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.label {
+    display: inline-block;
+    color: var(--color-gold);
+    font-size: 0.875rem;
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    margin-bottom: 1.5rem;
+    color: var(--color-dark-grey);
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-top: 4rem;
+    perspective: 1000px;
+}
+
+.brandCard {
+    background: var(--color-white);
+    border: 2px solid #e5e5e5;
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    will-change: transform;
+    overflow: hidden;
+}
+
+.brandCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg,
+            rgba(218, 165, 32, 0) 0%,
+            rgba(218, 165, 32, 0.05) 50%,
+            rgba(218, 165, 32, 0) 100%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.brandCard:hover {
+    transform: translateY(-12px) rotateY(5deg) scale(1.03);
+    border-color: var(--color-gold);
+    box-shadow: 0 20px 60px rgba(218, 165, 32, 0.25),
+        0 0 0 1px rgba(218, 165, 32, 0.1);
+}
+
+.brandCard:hover::before {
+    opacity: 1;
+}
+
+.cardShine {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg,
+            transparent 30%,
+            rgba(255, 255, 255, 0.3) 50%,
+            transparent 70%);
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+    transition: transform 0.8s ease;
+}
+
+.brandCard:hover .cardShine {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+}
+
+.iconWrapper {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.iconWrapper svg {
+    width: 40px;
+    height: 40px;
+    color: var(--color-gold);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 2px 4px rgba(218, 165, 32, 0.2));
+}
+
+.brandCard:hover .iconWrapper {
+    background: linear-gradient(135deg, var(--color-gold) 0%, #d4af37 100%);
+    border-color: var(--color-gold);
+    transform: scale(1.15) rotateZ(5deg);
+    box-shadow: 0 8px 25px rgba(218, 165, 32, 0.35);
+}
+
+.brandCard:hover .iconWrapper svg {
+    color: var(--color-white);
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.cardContent {
+    position: relative;
+    z-index: 2;
+}
+
+.brandName {
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-dark-grey);
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.brandCard:hover .brandName {
+    color: var(--color-gold);
+}
+
+.brandCategory {
+    font-size: 0.875rem;
+    color: #888;
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid #e5e5e5;
+}
+
+.footer p {
+    font-size: 1.125rem;
+    color: #888;
+    font-style: italic;
+    font-weight: var(--font-weight-light);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .cardsGrid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 2rem;
+    }
+
+    .brandCard {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .cardsGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .brandCard {
+        padding: 2rem 1.5rem;
+    }
+
+    .iconWrapper {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 1.5rem;
+    }
+
+    .iconWrapper svg {
+        width: 35px;
+        height: 35px;
+    }
+
+    .brandName {
+        font-size: 1.25rem;
+    }
+}

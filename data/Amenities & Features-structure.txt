@@ -1,0 +1,77 @@
+## 🔝 Page Header
+
+1. **Inner Page Banner**
+
+   * Page Title (Amenities & Features)
+   * Value-driven tagline (Designed for Business & Convenience)
+   * Breadcrumb
+
+---
+
+## 🏗️ Amenities & Features Page Body Sections
+
+2. **Amenities Overview Section**
+
+   * Short intro: why amenities matter in commercial investment
+
+3. **Infrastructure Features Section**
+
+   * Building quality
+   * Modern construction
+   * Project planning strength
+
+4. **Visibility & Frontage Features Section**
+
+   * Highway-facing exposure
+   * Branding & signage advantage
+
+5. **Parking & Accessibility Section**
+
+   * Ample car parking
+   * Easy entry & exit
+   * Visitor convenience
+
+6. **Footfall & Crowd Design Section**
+
+   * Movement-friendly layout
+   * Natural gathering zones
+
+7. **Retail & Business Support Features**
+
+   * Ideal shop sizes
+   * Business-friendly layouts
+
+8. **Safety & Security Features Section**
+
+   * Surveillance
+   * Lighting
+   * Secure environment
+
+9. **Daily Convenience Amenities Section**
+
+   * Utilities
+   * Maintenance support
+   * Common facilities
+
+10. **Lifestyle-Oriented Amenities Section**
+
+    * Food
+    * Fitness
+    * Shopping ecosystem
+
+11. **Investor Advantage Summary Section**
+
+    * How amenities improve rental & resale value
+
+12. **Call To Action Section**
+
+    * Enquire for Available Units
+    * Book Site Visit
+
+---
+
+## 🔻 Footer
+
+*(Same global footer across the website)*
+
+---
