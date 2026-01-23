@@ -1,4 +1,4 @@
-# Town Square - Premium Commercial Real Estate
+# Aurum Estate - Premium Commercial Real Estate
 
 A luxury, investor-focused commercial real-estate website built with React and GSAP animations.
 
