@@ -1,14 +1,64 @@
 import React, { useEffect, useState } from 'react';
+import ReactDOM from 'react-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import logo from '../../assets/images/logo/town-square-logo-2.png';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
 
+    const handleNavigation = (link, e) => {
+        e.preventDefault();
+        setIsMenuOpen(false); // Close mobile menu
+
+        if (link === 'Home') {
+            if (location.pathname !== '/') {
+                navigate('/');
+                window.scrollTo(0, 0);
+            } else {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            return;
+        }
+
+        // Handle Anchor Links
+        const targetId = link.toLowerCase();
+        if (location.pathname !== '/') {
+            navigate('/', { state: { targetId } });
+        } else {
+            const element = document.getElementById(targetId);
+            if (element) {
+                // GSAP ScrollSmoother handling if available globally or manual scroll
+                const offsetTop = element.offsetTop - 100;
+                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+            }
+        }
+    };
+
+    // Effect to handle hash scrolling after navigation
+    useEffect(() => {
+        if (location.state && location.state.targetId) {
+            const targetId = location.state.targetId;
+            // Delay slightly to allow dom render
+            setTimeout(() => {
+                const element = document.getElementById(targetId);
+                if (element) {
+                    const offsetTop = element.offsetTop - 100;
+                    window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                }
+            }, 500);
+            // Clear state
+            window.history.replaceState({}, document.title);
+        }
+    }, [location]);
+
+    // Scroll Detection
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
-
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
@@ -32,15 +82,13 @@ const Header = () => {
                 }`}
         >
             <div className="max-w-[1400px] mx-auto px-8 flex items-center justify-between">
-
                 {/* Logo Section */}
                 <div className="group cursor-pointer relative z-[1002]" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                    <span className="text-[10px] text-primary-gold uppercase tracking-[0.3em] block mb-1 opacity-80 group-hover:opacity-100 transition-opacity">
-                        The Landmark
-                    </span>
-                    <h3 className="text-2xl font-light text-white m-0 uppercase tracking-widest group-hover:text-primary-gold transition-colors duration-300">
-                        Town <span className="font-bold">Square</span>
-                    </h3>
+                    <img
+                        src={logo}
+                        alt="Town Square Logo"
+                        className="h-12 w-auto object-contain"
+                    />
                 </div>
 
                 {/* DESKTOP Navigation */}
@@ -48,9 +96,10 @@ const Header = () => {
                     {navLinks.map((link, index) => (
                         <a
                             key={index}
-                            href={link === 'Home' ? '#' : `#${link.toLowerCase()}`}
-                            className="text-[11px] font-bold uppercase tracking-[0.15em] text-white/70 transition-all duration-300 relative
-                                       hover:text-primary-gold"
+                            href={`#${link}`}
+                            onClick={(e) => handleNavigation(link, e)}
+                            className={`text-[11px] font-bold uppercase tracking-[0.15em] transition-all duration-300 relative
+                                       hover:text-primary-gold text-white/70`}
                         >
                             {link}
                         </a>
@@ -75,14 +124,14 @@ const Header = () => {
                     <div className={`w-8 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2.5 bg-primary-gold' : ''}`}></div>
                 </button>
 
-                {/* MOBILE Fullscreen Menu Overlay */}
+                {/* MOBILE Fullscreen Menu Overlay - Outside Header to escape backdrop-filter trip */}
                 <div className={`fixed top-0 left-0 w-full h-screen bg-black z-[1001] flex flex-col items-center justify-start pt-32 gap-6 transition-all duration-500 overflow-y-auto ${isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'}`}>
                     {navLinks.map((link, index) => (
                         <a
                             key={index}
-                            href={link === 'Home' ? '#' : `#${link.toLowerCase()}`}
+                            href={`#${link}`}
                             className="text-xl font-bold uppercase tracking-[0.2em] text-white/80 hover:text-primary-gold transition-colors"
-                            onClick={() => setIsMenuOpen(false)}
+                            onClick={(e) => handleNavigation(link, e)}
                         >
                             {link}
                         </a>
@@ -94,7 +143,6 @@ const Header = () => {
                         Enquire Now
                     </button>
                 </div>
-
             </div>
         </header>
     );

@@ -12,7 +12,7 @@ const LocationAdvantage = () => {
     const locations = [
         {
             id: 0,
-            name: "Ludhiana–Chandigarh Hwy",
+            name: "Ludhiana-Chandigarh Hwy",
             time: "0 Mins",
             desc: "Direct access on the most iconic and active highway connecting major cities.",
             type: "highway",

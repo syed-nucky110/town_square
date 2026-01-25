@@ -76,7 +76,7 @@ const LeadForm = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-1">Site Office</h4>
-                                    <p className="text-white/60 text-sm">Ludhiana–Chandigarh Highway,<br />Near Chandigarh University</p>
+                                    <p className="text-white/60 text-sm">Ludhiana-Chandigarh Highway,<br />Near Chandigarh University</p>
                                 </div>
                             </div>
 

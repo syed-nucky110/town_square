@@ -54,7 +54,7 @@ const Hero = () => {
                     {/* Location Badge - Small & Elegant */}
                     <div className="mb-8 opacity-90">
                         <span className="text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase text-primary-gold">
-                            Ludhiana – Chandigarh Highway
+                            Ludhiana - Chandigarh Highway
                         </span>
                     </div>
 
