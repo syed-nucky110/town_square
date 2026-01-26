@@ -1,14 +1,34 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useLayoutEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import ScrollSmoother from 'gsap/ScrollSmoother';
 import { galleryImages } from '../data/galleryData';
 import Lightbox from '../components/Ui/Lightbox';
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const GalleryPage = () => {
     const galleryRef = useRef(null);
     const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+
+    // FORCE SCROLL TO TOP ON MOUNT
+    useLayoutEffect(() => {
+        // 1. Native Reset
+        window.scrollTo(0, 0);
+
+        // 2. GSAP Smoother Reset
+        // We delay slightly to ensure the smoother check happens after global init
+        const t = setTimeout(() => {
+            const smoother = ScrollSmoother.get();
+            if (smoother) {
+                smoother.scrollTop(0);
+                // Kill old triggers to prevent jumpiness
+                ScrollTrigger.refresh();
+            }
+        }, 10);
+
+        return () => clearTimeout(t);
+    }, []);
 
     // Lightbox Logic
     const openLightbox = (index) => setSelectedImageIndex(index);

@@ -29,14 +29,38 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 // ScrollToTop Component to handle route changes
 const ScrollToTop = () => {
     const { pathname } = useLocation();
+
     useEffect(() => {
+        // Immediate native scroll
         window.scrollTo(0, 0);
+
+        // GSAP ScrollSmoother handling
+        const smoother = ScrollSmoother.get();
+        if (smoother) {
+            smoother.scrollTop(0);
+            // Force a refresh to ensure layout logic is correct after route change
+            ScrollTrigger.refresh();
+        }
     }, [pathname]);
+
     return null;
 };
 
 // Home Component (The original single-page layout)
 const Home = () => {
+    // FORCE SCROLL TO TOP ON MOUNT (Fix for navigation from Gallery)
+    React.useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+        const t = setTimeout(() => {
+            const smoother = ScrollSmoother.get();
+            if (smoother) {
+                smoother.scrollTop(0);
+                ScrollTrigger.refresh();
+            }
+        }, 10);
+        return () => clearTimeout(t);
+    }, []);
+
     return (
         <main>
             <Hero />

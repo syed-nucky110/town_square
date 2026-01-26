@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import { FileCheck, TrendingUp, MapPin, ShoppingBag, Rocket } from 'lucide-react';
 import projectImage from '../../assets/images/project-overview.png';
 import galleryBrands from '../../assets/images/gallery-brands.png';
 import lifestyleFood from '../../assets/images/lifestyle-food.png';
@@ -68,7 +69,7 @@ const Highlights = () => {
             subtitle: '100% Compliant Asset',
             description: 'Fully registered project ensuring complete transparency and investor protection.',
             image: projectImage,
-            icon: '📜'
+            icon: <FileCheck className="w-6 h-6 text-primary-gold" />
         },
         {
             number: '02',
@@ -76,7 +77,7 @@ const Highlights = () => {
             subtitle: 'Consistent Monthly Income',
             description: 'Secure your future with pre-leased units offering steady and reliable returns.',
             image: galleryBrands,
-            icon: '📈'
+            icon: <TrendingUp className="w-6 h-6 text-primary-gold" />
         },
         {
             number: '03',
@@ -84,7 +85,7 @@ const Highlights = () => {
             subtitle: 'Ludhiana-Chandigarh Hwy',
             description: 'Unmatched visibility on the iconic highway, minutes from Chandigarh University.',
             image: galleryAerial,
-            icon: '📍'
+            icon: <MapPin className="w-6 h-6 text-primary-gold" />
         },
         {
             number: '04',
@@ -92,7 +93,7 @@ const Highlights = () => {
             subtitle: 'Barista, Carl\'s Jr, Snekars',
             description: 'Anchored by top national and lifestyle brands ensuring constant buzz and demand.',
             image: lifestyleFood,
-            icon: '🛍️'
+            icon: <ShoppingBag className="w-6 h-6 text-primary-gold" />
         },
         {
             number: '05',
@@ -100,7 +101,7 @@ const Highlights = () => {
             subtitle: 'High Appreciation',
             description: 'Located in a rapidly developing zone, ensuring significant asset value growth over time.',
             image: heroImage,
-            icon: '🚀'
+            icon: <Rocket className="w-6 h-6 text-primary-gold" />
         }
     ];
 
