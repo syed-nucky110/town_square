@@ -48,7 +48,12 @@ const Footer = () => {
 
                     {/* Column 1: Brand Info */}
                     <div className="space-y-6">
-                        <img src={logo} alt="Town Square" className="h-10 w-auto opacity-90" />
+                        <img
+                            src={logo}
+                            alt="Town Square"
+                            className="h-10 w-auto opacity-90 cursor-pointer hover:opacity-100 transition-opacity"
+                            onClick={(e) => handleNavigation('Home', e)}
+                        />
                         <p className="text-white/60 text-sm leading-relaxed max-w-sm">
                             A premier destination on the Ludhiana-Chandigarh Highway. Where modern commerce meets community in a thoughtfully designed ecosystem.
                         </p>
