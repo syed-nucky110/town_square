@@ -1,10 +1,11 @@
 import React, { useState, useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import projectImage from '../../assets/images/project-overview.png';
-import lifestyleFood from '../../assets/images/lifestyle-food.png';
-import galleryBrands from '../../assets/images/gallery-brands.png';
-import heroImage from '../../assets/images/hero-bg.png';
+import gallery1 from '../../assets/images/gallery/gallery-img-1.jpeg';
+import gallery2 from '../../assets/images/gallery/gallery-img-2.jpeg';
+import gallery3 from '../../assets/images/gallery/gallery-img-3.jpeg';
+import gallery4 from '../../assets/images/gallery/gallery-img-4.jpeg';
+import gallery5 from '../../assets/images/gallery/gallery-img-5.jpeg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -19,7 +20,7 @@ const Amenities = () => {
             id: '01',
             title: "Multi-Level Parking",
             desc: "Dedicated 100% car parking infrastructure handling high volume visitor traffic effortlessly.",
-            image: heroImage, // Placeholder - ideally specific parking img
+            image: gallery1, // Updated image
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2" /><circle cx="7" cy="17" r="2" /><path d="M9 17h6" /><circle cx="17" cy="17" r="2" /></svg>
             )
@@ -28,7 +29,7 @@ const Amenities = () => {
             id: '02',
             title: "Top-Tier Security",
             desc: "24/7 CCTV surveillance and professional security personnel ensuring a safe environment.",
-            image: projectImage,
+            image: gallery2,
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
             )
@@ -37,7 +38,7 @@ const Amenities = () => {
             id: '03',
             title: "Grand Frontage",
             desc: "Double-height shops designed for maximum brand visibility and premium retail experience.",
-            image: galleryBrands,
+            image: gallery3,
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 21h18" /><path d="M5 21v-7" /><path d="M19 21v-7" /><path d="M10 9L3 21" /><path d="M14 9l7 12" /><rect x="9" y="3" width="6" height="6" /><path d="M12 3v18" /></svg>
             )
@@ -46,7 +47,7 @@ const Amenities = () => {
             id: '04',
             title: "Lifestyle Hub",
             desc: "A curated mix of food courts, entertainment zones, and fine dining for family leisure.",
-            image: lifestyleFood,
+            image: gallery4,
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1" /><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" /><line x1="6" y1="1" x2="6" y2="4" /><line x1="10" y1="1" x2="10" y2="4" /><line x1="14" y1="1" x2="14" y2="4" /></svg>
             )
@@ -55,7 +56,7 @@ const Amenities = () => {
             id: '05',
             title: "Smart Infrastructure",
             desc: "Fiber-optic connectivity and 100% power backup for uninterrupted business operations.",
-            image: projectImage,
+            image: gallery5,
             icon: (
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
             )

@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
-import ScrollSmoother from 'gsap/ScrollSmoother';
-import heroBackground from '../../assets/images/hero-bg.png';
+import heroBackground from '../../assets/images/gallery/gallery-img-1.jpeg';
 
 const Hero = () => {
     const heroRef = useRef(null);
