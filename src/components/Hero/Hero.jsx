@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import ScrollSmoother from 'gsap/ScrollSmoother';
 import heroBackground from '../../assets/images/hero-bg.png';
 
 const Hero = () => {
@@ -34,6 +35,20 @@ const Hero = () => {
         return () => ctx.revert();
     }, []);
 
+    const handleExploreClick = (e) => {
+        e.preventDefault();
+        const targetId = 'location';
+        const element = document.getElementById(targetId);
+        const smoother = ScrollSmoother.get();
+
+        if (smoother && element) {
+            smoother.scrollTo(element, true, "top top+=100");
+        } else if (element) {
+            const offsetTop = element.offsetTop - 100;
+            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+        }
+    };
+
     return (
         <section ref={heroRef} className="relative h-screen w-full overflow-hidden flex items-center justify-center">
             {/* Background Image with Slow Cinematic Zoom */}
@@ -54,7 +69,7 @@ const Hero = () => {
                     {/* Location Badge - Small & Elegant */}
                     <div className="mb-8 opacity-90">
                         <span className="text-[10px] md:text-xs font-bold tracking-[0.4em] uppercase text-primary-gold">
-                            Ludhiana - Chandigarh Highway
+                            Chandigarh - Ludhiana Highway
                         </span>
                     </div>
 
@@ -71,6 +86,7 @@ const Hero = () => {
                     {/* Minimal CTA - Single Interaction */}
                     <a
                         href="#location"
+                        onClick={handleExploreClick}
                         className="group flex flex-col items-center gap-2 no-underline opacity-80 hover:opacity-100 transition-opacity"
                     >
                         <span className="text-[10px] uppercase tracking-[0.3em] text-white">Explore</span>

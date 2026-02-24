@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ScrollSmoother from 'gsap/ScrollSmoother';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Facebook, Instagram, Linkedin, ShieldCheck } from 'lucide-react';
 import logo from '../../assets/images/logo/town-square-logo-2.png';
 
 const Footer = () => {
@@ -55,8 +55,26 @@ const Footer = () => {
                             onClick={(e) => handleNavigation('Home', e)}
                         />
                         <p className="text-white/60 text-sm leading-relaxed max-w-sm">
-                            A premier destination on the Ludhiana-Chandigarh Highway. Where modern commerce meets community in a thoughtfully designed ecosystem.
+                            A premier destination on the Chandigarh-Ludhiana Highway. Where modern commerce meets community in a thoughtfully designed ecosystem.
                         </p>
+                        {/* Social Links */}
+                        <div className="flex gap-4 pt-2">
+                            {[
+                                { icon: Facebook, link: '#' },
+                                { icon: Instagram, link: 'https://www.instagram.com/townsquaremorinda/' },
+                                { icon: Linkedin, link: '#' }
+                            ].map((item, i) => (
+                                <a
+                                    key={i}
+                                    href={item.link}
+                                    target={item.link !== '#' ? '_blank' : '_self'}
+                                    rel={item.link !== '#' ? 'noopener noreferrer' : ''}
+                                    className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white/60 hover:bg-primary-gold hover:text-black transition-all duration-300 group"
+                                >
+                                    <item.icon className="w-5 h-5" />
+                                </a>
+                            ))}
+                        </div>
                     </div>
 
                     {/* Column 2: Quick Links */}
@@ -66,7 +84,7 @@ const Footer = () => {
                             {['Home', 'Vision', 'Amenities', 'Gallery', 'Contact'].map((item) => (
                                 <li key={item}>
                                     <a
-                                        href={`#${item.toLowerCase()}`}
+                                        href={`#${item.toLowerCase()} `}
                                         onClick={(e) => handleNavigation(item, e)}
                                         className="text-white/60 hover:text-primary-gold text-sm transition-colors cursor-pointer"
                                     >
@@ -77,27 +95,13 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Column 3: Resources */}
-                    <div>
-                        <h4 className="text-white font-semibold uppercase tracking-wider text-xs mb-6">Resources</h4>
-                        <ul className="space-y-4">
-                            {['Brochure', 'Floor Plans', 'Investment Guide', 'Press & Media'].map((item) => (
-                                <li key={item}>
-                                    <a href="#" className="text-white/60 hover:text-primary-gold text-sm transition-colors">
-                                        {item}
-                                    </a>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Column 4: Contact */}
+                    {/* Column 3: Contact */}
                     <div>
                         <h4 className="text-white font-semibold uppercase tracking-wider text-xs mb-6">Connect</h4>
                         <ul className="space-y-4">
                             <li className="text-white/60 text-sm leading-relaxed">
                                 <span className="block text-white mb-1">Sales Office:</span>
-                                Ludhiana-Chandigarh Highway,<br />Near Chandigarh University
+                                Chandigarh-Ludhiana Highway,<br />near Morinda
                             </li>
                             <li>
                                 <a href="tel:+919876543210" className="text-white/60 hover:text-primary-gold text-sm transition-colors block">
@@ -110,6 +114,25 @@ const Footer = () => {
                                 </a>
                             </li>
                         </ul>
+                    </div>
+
+                    {/* Column 4: Regulatory / RERA */}
+                    <div>
+                        <h4 className="text-white font-semibold uppercase tracking-wider text-xs mb-6">Regulatory Info</h4>
+                        <div className="space-y-4">
+                            <div className="p-6 bg-white/5 rounded border border-white/10 hover:border-primary-gold/30 transition-colors">
+                                <div className="flex items-center gap-2 mb-3 text-primary-gold">
+                                    <ShieldCheck className="w-5 h-5" />
+                                    <span className="text-xs font-bold uppercase tracking-wider">RERA Registered</span>
+                                </div>
+                                <p className="text-white font-mono text-lg tracking-wide">
+                                    PBRERA-RPR70-PC0341
+                                </p>
+                            </div>
+                            <p className="text-white/40 text-xs text-justify leading-relaxed">
+                                This project is registered with the Punjab Real Estate Regulatory Authority.
+                            </p>
+                        </div>
                     </div>
                 </div>
 

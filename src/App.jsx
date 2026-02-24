@@ -23,6 +23,8 @@ import GalleryPage from './pages/GalleryPage';
 // Import styles
 import './styles/global.css';
 
+import ScrollToTopButton from './components/Ui/ScrollToTopButton';
+
 // Register GSAP plugins
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -111,6 +113,7 @@ function App() {
             <ScrollToTop />
             <div id="smooth-wrapper" className="min-h-screen bg-primary-black">
                 <Header />
+                <ScrollToTopButton />
                 <div id="smooth-content">
                     <div className="relative z-10 bg-primary-black shadow-2xl">
                         <Routes>

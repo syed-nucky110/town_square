@@ -101,7 +101,7 @@ const StackedPanels = () => {
     const panels = [
         {
             title: 'Prime Visibility',
-            description: 'Strategically anchored on the Ludhiana-Chandigarh Highway. Maximum visibility and seamless connectivity for high-volume daily traffic.',
+            description: 'Strategically anchored on the Chandigarh-Ludhiana Highway. Maximum visibility and seamless connectivity for high-volume daily traffic.',
             image: galleryAerial,
             color: 'from-purple-900/20 to-blue-900/20'
         },

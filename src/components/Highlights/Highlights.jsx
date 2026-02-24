@@ -82,7 +82,7 @@ const Highlights = () => {
         {
             number: '03',
             title: 'Strategic Location',
-            subtitle: 'Ludhiana-Chandigarh Hwy',
+            subtitle: 'Chandigarh-Ludhiana Hwy',
             description: 'Unmatched visibility on the iconic highway, minutes from Chandigarh University.',
             image: galleryAerial,
             icon: <MapPin className="w-6 h-6 text-primary-gold" />
