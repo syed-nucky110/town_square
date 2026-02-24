@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import projectImage from '../../assets/images/project-overview.png';
-import galleryBrands from '../../assets/images/gallery-brands.png';
-import lifestyleFood from '../../assets/images/lifestyle-food.png';
-import galleryAerial from '../../assets/images/gallery-aerial.png';
+import gallery1 from '../../assets/images/gallery/gallery-img-1.jpeg';
+import gallery2 from '../../assets/images/gallery/gallery-img-2.jpeg';
+import gallery3 from '../../assets/images/gallery/gallery-img-3.jpeg';
+import gallery4 from '../../assets/images/gallery/gallery-img-4.jpeg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -102,25 +102,25 @@ const StackedPanels = () => {
         {
             title: 'Prime Visibility',
             description: 'Strategically anchored on the Ludhiana-Chandigarh Highway. Maximum visibility and seamless connectivity for high-volume daily traffic.',
-            image: galleryAerial,
+            image: gallery1,
             color: 'from-purple-900/20 to-blue-900/20'
         },
         {
             title: 'Student Hub',
             description: 'Just minutes away from Chandigarh University and top institutions. The ultimate hangout spot for students, faculty, and young professionals.',
-            image: projectImage,
+            image: gallery2,
             color: 'from-blue-900/20 to-cyan-900/20'
         },
         {
             title: 'Curated Lifestyle',
             description: 'Home to global names like Carl\'s Jr, Barista, and Anytime Fitness. A curated ecosystem ensuring consistent demand and premium positioning.',
-            image: galleryBrands,
+            image: gallery3,
             color: 'from-cyan-900/20 to-teal-900/20'
         },
         {
             title: 'Investor Ready',
             description: 'RERA Approved with 100% car parking and high ROI potential. A secure asset built not just for today, but for generations ahead.',
-            image: lifestyleFood,
+            image: gallery4,
             color: 'from-teal-900/20 to-green-900/20'
         }
     ];

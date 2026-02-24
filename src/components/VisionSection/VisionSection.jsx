@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import heroImage from '../../assets/images/hero-bg.png';
-import projectImage from '../../assets/images/project-overview.png';
-import lifestyleFood from '../../assets/images/lifestyle-food.png';
-import galleryBrands from '../../assets/images/gallery-brands.png';
+import gallery1 from '../../assets/images/gallery/gallery-img-1.jpeg';
+import gallery2 from '../../assets/images/gallery/gallery-img-2.jpeg';
+import gallery3 from '../../assets/images/gallery/gallery-img-3.jpeg';
+import gallery4 from '../../assets/images/gallery/gallery-img-4.jpeg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -68,25 +68,25 @@ const VisionSection = () => {
             subtitle: "The Vision",
             title: "Where Commerce Meets Culture",
             description: "A landmark destination on the Ludhiana-Chandigarh Highway, designed to be the region's ultimate social and business hub. We aren't just building shops; we are curating experiences.",
-            image: heroImage,
+            image: gallery1,
         },
         {
             subtitle: "The Legacy",
             title: "Built for Generations",
             description: "More than just square footage. A project rooted in trust, quality construction, and timeless appeal. Every detail is engineered for lasting value.",
-            image: projectImage,
+            image: gallery2,
         },
         {
             subtitle: "The Lifestyle",
             title: "Fitness. Food. Fashion. Fun.",
             description: "The highway's exciting 'Natural Halt'. A curated mix of global dining, 24/7 fitness, and premium retail experiences creating a 24-hour ecosystem.",
-            image: lifestyleFood,
+            image: gallery3,
         },
         {
             subtitle: "The Future",
             title: "A Smart Investment",
             description: "Future-ready infrastructure ensuring high footfall and exceptional ROI. Positioned in a high-growth corridor, your investment grows with the destination.",
-            image: galleryBrands,
+            image: gallery4,
         }
     ];
 

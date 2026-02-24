@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import heroImage from '../../assets/images/hero-bg.png';
-import projectImage from '../../assets/images/project-overview.png';
-import lifestyleFood from '../../assets/images/lifestyle-food.png';
-import galleryBrands from '../../assets/images/gallery-brands.png';
+import gallery1 from '../../assets/images/gallery/gallery-img-1.jpeg';
+import gallery2 from '../../assets/images/gallery/gallery-img-2.jpeg';
+import gallery3 from '../../assets/images/gallery/gallery-img-3.jpeg';
+import gallery4 from '../../assets/images/gallery/gallery-img-4.jpeg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,22 +35,22 @@ const PropertyGrid = () => {
 
     const properties = [
         {
-            image: galleryBrands,
+            image: gallery1,
             title: 'High-Street Retail',
             subtitle: 'Feat. Snekars, Basant & Brand Loot'
         },
         {
-            image: lifestyleFood,
+            image: gallery2,
             title: 'Global Dining',
             subtitle: 'Anchored by Carl\'s Jr. & Barista'
         },
         {
-            image: projectImage,
+            image: gallery3,
             title: 'Wellness & Fitness',
             subtitle: 'Powered by Anytime Fitness'
         },
         {
-            image: heroImage,
+            image: gallery4,
             title: 'Social Hub',
             subtitle: "The Highway's Natural Halt"
         }

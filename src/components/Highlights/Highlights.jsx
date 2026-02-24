@@ -2,11 +2,11 @@ import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { FileCheck, TrendingUp, MapPin, ShoppingBag, Rocket } from 'lucide-react';
-import projectImage from '../../assets/images/project-overview.png';
-import galleryBrands from '../../assets/images/gallery-brands.png';
-import lifestyleFood from '../../assets/images/lifestyle-food.png';
-import galleryAerial from '../../assets/images/gallery-aerial.png';
-import heroImage from '../../assets/images/hero-bg.png';
+import gallery1 from '../../assets/images/gallery/gallery-img-1.jpeg';
+import gallery2 from '../../assets/images/gallery/gallery-img-2.jpeg';
+import gallery3 from '../../assets/images/gallery/gallery-img-3.jpeg';
+import gallery4 from '../../assets/images/gallery/gallery-img-4.jpeg';
+import gallery5 from '../../assets/images/gallery/gallery-img-5.jpeg';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -68,7 +68,7 @@ const Highlights = () => {
             title: 'RERA Approved',
             subtitle: '100% Compliant Asset',
             description: 'Fully registered project ensuring complete transparency and investor protection.',
-            image: projectImage,
+            image: gallery1,
             icon: <FileCheck className="w-6 h-6 text-primary-gold" />
         },
         {
@@ -76,7 +76,7 @@ const Highlights = () => {
             title: 'Guaranteed Rentals',
             subtitle: 'Consistent Monthly Income',
             description: 'Secure your future with pre-leased units offering steady and reliable returns.',
-            image: galleryBrands,
+            image: gallery2,
             icon: <TrendingUp className="w-6 h-6 text-primary-gold" />
         },
         {
@@ -84,7 +84,7 @@ const Highlights = () => {
             title: 'Strategic Location',
             subtitle: 'Ludhiana-Chandigarh Hwy',
             description: 'Unmatched visibility on the iconic highway, minutes from Chandigarh University.',
-            image: galleryAerial,
+            image: gallery3,
             icon: <MapPin className="w-6 h-6 text-primary-gold" />
         },
         {
@@ -92,7 +92,7 @@ const Highlights = () => {
             title: 'Iconic Brands',
             subtitle: 'Barista, Carl\'s Jr, Snekars',
             description: 'Anchored by top national and lifestyle brands ensuring constant buzz and demand.',
-            image: lifestyleFood,
+            image: gallery4,
             icon: <ShoppingBag className="w-6 h-6 text-primary-gold" />
         },
         {
@@ -100,7 +100,7 @@ const Highlights = () => {
             title: 'Capital Growth',
             subtitle: 'High Appreciation',
             description: 'Located in a rapidly developing zone, ensuring significant asset value growth over time.',
-            image: heroImage,
+            image: gallery5,
             icon: <Rocket className="w-6 h-6 text-primary-gold" />
         }
     ];
